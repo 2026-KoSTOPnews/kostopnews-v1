@@ -55,7 +55,7 @@ class UserSentimentPipeline:
                 keyword=company_name,
                 start_time=start_time,
                 end_time=end_time,
-                max_articles=50
+                max_articles=10
             )
 
         with ThreadPoolExecutor(max_workers=len(self.collectors)) as executor:

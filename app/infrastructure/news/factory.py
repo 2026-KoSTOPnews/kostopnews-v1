@@ -10,7 +10,7 @@ from app.infrastructure.news.collector.edaily import EdailyCollector
 class NewsCollectorFactory:
     _collectors: Dict[str, Type[NewsCollector]] = {
         "yeonhap": YeonhapCollector,
-        # "mk": MkCollector,
+        "mk": MkCollector,
         # "hankyung": HankyungCollector,
         # "sedaily": SedailyCollector,
         # "edaily": EdailyCollector,
